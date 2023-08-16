@@ -1,7 +1,15 @@
-﻿internal class Program
+﻿using System;
+
+namespace CSVHelperImplementation
 {
-    private static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("CSVHelperImplementation");
+        static void Main(string[] args)
+        {
+            CSVHandlerImplement cSVHandlerImplement = new CSVHandlerImplement();
+            cSVHandlerImplement.ImplementCSVHandler();
+            cSVHandlerImplement.ImplementCSVHandlerToJson();
+            cSVHandlerImplement.ImplementJsonToCsv();
+        }
     }
 }
